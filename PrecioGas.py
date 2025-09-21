@@ -47,7 +47,7 @@ def user_input_features():
     "Zacatecas"
 ]
   entidad_name = st.selectbox("Selecciona un estado de la republica", estados)
-  mes_num = st.number_input('Mes (del 1 al 12, considerando mes 1=Ene - 12=Dic):', min_value=1, max_value=12, value = 1, step = 1)
+  mes_num = st.number_input('Mes (del 1 al 12, considerando mes 1=Ene - 12=Dic)', min_value=1, max_value=12, value = 1, step = 1)
 
   # Create a mapping from state names to numerical values
   estado_mapping = {state: i for i, state in enumerate(estados)}
