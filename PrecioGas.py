@@ -78,4 +78,4 @@ b1 = LR.coef_
 b0 = LR.intercept_
 prediccion = b0 + b1[0]*df.año + b1[1]*df.mes_num + b1[2]*df.entidad_num
 st.subheader('Cálculo del precio de la gasolina regular')
-st.write('Precio estimado ', prediccion)
+st.write('Precio estimado de acuerdo a los datos seleccionados ', prediccion)
