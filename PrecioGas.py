@@ -11,7 +11,7 @@ st.header('Datos de evaluación')
 
 def user_input_features():
   # Entrada
-  año = st.number_input('año (2017 - 2025 ):',  min_value=2017, max_value=2025, value = 2023, step = 1)
+  año = st.number_input('año (2017 - 2025 ):',  min_value=2017, max_value=2040, value = 2023, step = 1)
   estados = [
     "Aguascalientes",
     "Baja California",
