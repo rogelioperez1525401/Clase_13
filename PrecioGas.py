@@ -5,13 +5,13 @@ import pandas as pd
 
 
 st.write(''' # Predicción del Precio de la Gasolina con Streamlit ''')
-st.image("gasolina.jpg", caption="Precio de gasolina regular aproximadamenteee.")
+st.image("gasolina.jpg", caption="Precio de gasolina.")
 
-st.header('Datos de evaluación')
+st.header('Ingrese Año, Estado y Mes')
 
 def user_input_features():
   # Entrada
-  año = st.number_input('año (2017 - 2025 ):',  min_value=2017, max_value=2040, value = 2023, step = 1)
+  año = st.number_input('año (2017-2041 ):',  min_value=2017, max_value=2040, value = 2023, step = 1)
   estados = [
     "Aguascalientes",
     "Baja California",
@@ -46,7 +46,7 @@ def user_input_features():
     "Yucatán",
     "Zacatecas"
 ]
-  entidad_name = st.selectbox("Selecciona un estado", estados)
+  entidad_name = st.selectbox("Selecciona un estado de la republica", estados)
   mes_num = st.number_input('Mes (1 - 12 donde enero =1 ... diciembre=12):', min_value=1, max_value=12, value = 1, step = 1)
 
   # Create a mapping from state names to numerical values
