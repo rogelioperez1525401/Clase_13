@@ -5,7 +5,7 @@ import pandas as pd
 
 
 st.write(''' # Predicción del Precio de la Gasolina con Streamlit ''')
-st.image("gasolina.jpg", caption="Precio de gasolina.")
+st.image("gasolina.jpg", caption="Precio de gasolina regular.")
 
 st.header('Ingrese los datos de Año, Estado y Mes')
 
